@@ -30,7 +30,7 @@ public class Main {
 	     a1.addCasello(c1);
 	     Casello c2 = new Casello(a1,"Parma",(float)111);
 	     a1.addCasello(c2);
-	     Casello c3 = new Casello(a24,"Assergi",(float)116);
+	     Casello c3 = new Casello(a24,"Tornimparte",(float)84.9);
 	     a24.addCasello(c3);
 	     Casello c4 = new Casello(a24,"Teramo",(float)146.1);
 	     a24.addCasello(c4); 
@@ -42,10 +42,12 @@ public class Main {
 		 Pedaggio p1 = new Pedaggio(c3,c4,v1);
 	     Pedaggio p2 = new Pedaggio(c4,c5,v2);
 	     Pedaggio p3 = new Pedaggio(c1,c2,v3);
+	     Pedaggio p4 = new Pedaggio(c3,c5,v1);
 	     
-	     System.out.println(p1.calcola() + " € ");
-	     System.out.println(p2.calcola() + " € ");
-	     System.out.println(p3.calcola() + " € ");
+	     System.out.println(p1.calcola() + " Euro");
+	     System.out.println(p2.calcola() + " Euro");
+	     System.out.println(p3.calcola() + " Euro");
+	     System.out.println(p4.calcola() + " Euro");
 	}
 
 }
